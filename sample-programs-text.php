@@ -7,7 +7,7 @@ $my_custom_text = <<< EOD
   </div>
 EOD;
 
-if(is_single() && !is_home() && has_term($term = array("hello-world-in-every-language"), $taxonomy = 'series')) {
+if(is_single() && !is_home() && has_term($term = array("hello-world-in-every-language", "reverse-a-string-in-every-language"), $taxonomy = 'series')) {
 	$content .= $my_custom_text;
 }
 return $content;
